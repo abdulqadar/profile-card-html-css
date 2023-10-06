@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #009688;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  padding: 25px;
+}
+
+.profile-card::before {
+  content: '';
+  background-color: #cddc39;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+
+.profile-card_image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #8bc34a;
+  border-radius: 50%;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.profile-card_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: white solid 3px;
+  cursor: pointer;
+}
+
+.profile-card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  columns: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.profile-card .content p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  margin: 0 8px;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  text-decoration: none;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.cta-btn button {
+  background-color: #cddc39;
+  color: white;
+  font-size: 14px;
+  border-radius: 24px;
+  font-weight: 400;
+  margin: 0 8px;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn button:hover {
+  background-color: #8bc34a;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.stats .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  border-right: 2px solid #e7e7e7;
+  padding: 0 20px;
+}
+.stats .data {
+  border-right: none;
+}
+.stats .data i {
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 18px;
+}
